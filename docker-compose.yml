@@ -1,7 +1,7 @@
 services:
   vllm_embed:
     build: .
-    image: layer-gateway-embed-v1:local
+    image: docker-vllm-embedding-v1:local
     container_name: vllm_embed
     restart: unless-stopped
     runtime: nvidia

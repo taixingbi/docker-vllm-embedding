@@ -6,8 +6,8 @@ OpenAI-compatible embeddings on port **8001** (`/v1/embeddings`), using [vLLM](h
 
 On push to `main` or manual **workflow_dispatch**, [.github/workflows/docker-push.yml](.github/workflows/docker-push.yml) builds the [Dockerfile](Dockerfile) and pushes:
 
-- `<dockerhub_user>/layer-gateway-embed-v1:latest`
-- `<dockerhub_user>/layer-gateway-embed-v1:<git_sha>`
+- `<dockerhub_user>/docker-vllm-embedding-v1:latest`
+- `<dockerhub_user>/docker-vllm-embedding-v1:<git_sha>`
 
 Repository secrets: `DOCKERHUB_USERNAME`, `DOCKERHUB_TOKEN`.
 
