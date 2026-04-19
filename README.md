@@ -51,3 +51,17 @@ docker run -d \
   --max-num-seqs 16 \
   --gpu-memory-utilization 0.08
 ```
+
+## note
+```
+# rm docker image and container
+docker rm -f vllm-embeddings && docker rmi -f vllm/vllm-openai:latest
+```
+
+## reconfig
+need gpu-memory-utilization 0.01 before reconfig
+
+
+
+
+
