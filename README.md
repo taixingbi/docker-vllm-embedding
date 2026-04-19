@@ -26,7 +26,7 @@ Optional: create a `.env` in the repo root with `EMBED_MODEL` and/or `HUGGING_FA
 ```bash
 curl "http://127.0.0.1:8001/v1/embeddings" \
   -H "Content-Type: application/json" \
-  -d '{"model":"BAAI/bge-large-en-v1.5","input":"hello world"}'
+  -d '{"model":"BAAI/bge-m3","input":"hello world"}'
 ```
 
 ## pull image and run docker
