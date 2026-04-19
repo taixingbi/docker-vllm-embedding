@@ -46,5 +46,5 @@ docker run -d \
   --dtype half \
   --max-model-len 4096 \
   --max-num-seqs 16 \
-  --gpu-memory-utilization 0.07
+  --gpu-memory-utilization 0.05
 ```
