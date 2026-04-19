@@ -44,7 +44,7 @@ docker run -d \
   --host 0.0.0.0 \
   --port 8001 \
   --dtype half \
-  --max-model-len 8192 \
+  --max-model-len 4096 \
   --max-num-seqs 16 \
   --gpu-memory-utilization 0.07
 ```
