@@ -31,12 +31,10 @@ curl "http://127.0.0.1:8001/v1/embeddings" \
 
 ## pull image and run docker
 ```bash
-
-docker rm -f vllm-embedding
-
 taixingbi/docker-vllm-embedding-v1:latest
 --model BAAI/bge-m3
 
+docker rm -f vllm-embedding
 docker run -d \
   --name vllm-embedding \
   --gpus all \
