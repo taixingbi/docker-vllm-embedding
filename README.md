@@ -28,3 +28,25 @@ curl "http://127.0.0.1:8001/v1/embeddings" \
   -H "Content-Type: application/json" \
   -d '{"model":"BAAI/bge-large-en-v1.5","input":"hello world"}'
 ```
+
+## pull image and run docker
+```bash
+
+docker rm -f vllm-embedding
+
+taixingbi/docker-vllm-embedding-v1:latest
+--model BAAI/bge-m3
+
+docker run -d \
+  --name vllm-embedding \
+  --gpus all \
+  -p 8001:8001 \
+  taixingbi/docker-vllm-embedding-v1:latest \
+  --model BAAI/bge-m3 \
+  --host 0.0.0.0 \
+  --port 8001 \
+  --dtype half \
+  --max-model-len 512 \
+  --max-num-seqs 64 \
+  --gpu-memory-utilization 0.01
+```
