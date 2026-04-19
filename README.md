@@ -50,6 +50,8 @@ docker run -d \
   --max-model-len 4096 \
   --max-num-seqs 16 \
   --gpu-memory-utilization 0.08
+
+docker logs --tail 500 vllm-embeddings
 ```
 
 ## note
