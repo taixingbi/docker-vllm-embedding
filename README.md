@@ -36,6 +36,7 @@ docker pull taixingbi/docker-vllm-embedding-v1:latest
 
 # remove container
 docker rm -f vllm-embedding
+
 # run container
 docker run -d \
   --name vllm-embedding \
