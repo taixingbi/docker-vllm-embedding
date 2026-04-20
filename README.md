@@ -63,7 +63,9 @@ docker rm -f vllm-embeddings && docker rmi -f vllm/vllm-openai:latest
 ## reconfig
 need gpu-memory-utilization 0.01 before reconfig
 
-
-
+## check config
+```
+docker exec -it vllm-embedding cat /proc/1/cmdline | tr '\0' ' ' | grep max-num-seqs
+```
 
 
