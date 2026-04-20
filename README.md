@@ -48,7 +48,7 @@ docker run -d \
   --port 8001 \
   --dtype half \
   --max-model-len 4096 \
-  --max-num-seqs 16 \
+  --max-num-seqs 8 \
   --gpu-memory-utilization 0.08
 
 docker logs --tail 500 -f vllm-embedding
