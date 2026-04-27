@@ -40,6 +40,7 @@ docker rm -f vllm-embedding
 # run container
 docker run -d \
   --name vllm-embedding \
+  --restart unless-stopped \
   --gpus all \
   -p 8001:8001 \
   taixingbi/docker-vllm-embedding-v1:latest \
